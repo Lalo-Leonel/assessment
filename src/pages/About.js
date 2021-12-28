@@ -19,7 +19,7 @@ export default function About() {
       </div>
       <div>CORREO: 155184@unsaac.edu.pe</div>
       <div>
-        <a href="">GitHub</a>
+        <a href="https://github.com/Lalo-Leonel/assessment">GitHub</a>
       </div>
     </div>
   );
