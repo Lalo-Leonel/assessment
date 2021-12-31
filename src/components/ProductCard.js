@@ -32,14 +32,16 @@ function ProductCard() {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Something went wrong. Try again later</p>;
   return (
-    <div>
+    <div className="Cards">
       {products.map((product) => {
         // console.log(product);
         return (
-          <div key={product.id}>
-            <div>{product.title}</div>
-            <img className="Image" src={product.image} alt="" />
+          <div key={product.id} className="Card">
+            <div>
+              <img className="Image" src={product.image} alt="" />
+            </div>
             {/* <button>Detalles</button> */}
+            <div>{product.title}</div>
             <Link to={`/detalle/${product.id}`}>Detalles</Link>
           </div>
         );

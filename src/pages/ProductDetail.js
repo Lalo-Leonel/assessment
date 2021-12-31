@@ -33,11 +33,13 @@ function ProductDetail() {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Something went wrong. Try again later</p>;
   return (
-    <div className="Card">
-      <div>{product.title}</div>
-      <img className="Image" src={product.image} alt="" />
-      <div>{product.description}</div>
-      <div>{product.price}</div>
+    <div className="Cards">
+      <div className="CardDetail">
+        <div>{product.title}</div>
+        <img className="Image" src={product.image} alt="" />
+        <div>{product.description}</div>
+        <div>{product.price}</div>
+      </div>
     </div>
   );
 }
