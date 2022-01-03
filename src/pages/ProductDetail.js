@@ -35,10 +35,11 @@ function ProductDetail() {
   return (
     <div className="Cards">
       <div className="CardDetail">
-        <div>{product.title}</div>
+        <div className="Text">{product.title}</div>
         <img className="Image" src={product.image} alt="" />
-        <div>{product.description}</div>
-        <div>{product.price}</div>
+        <div className="Description">{product.description}</div>
+        <div className="Text">Precio: {product.price}</div>
+        <div className="Text">Categoria: {product.category}</div>
       </div>
     </div>
   );

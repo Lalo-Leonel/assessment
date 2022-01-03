@@ -2,19 +2,16 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <>
-      <ul className="Navbar">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        {/* <li>
-          <Link to="/product">Product Detail</Link>
-        </li> */}
-        <li>
-          <Link to="/about">About</Link>
-        </li>
+    <div className="Navbar">
+      <ul>
+        <Link to="/">
+          <li>Home</li>
+        </Link>
+        <Link to="/about">
+          <li>About</li>
+        </Link>
       </ul>
-    </>
+    </div>
   );
 }
 
